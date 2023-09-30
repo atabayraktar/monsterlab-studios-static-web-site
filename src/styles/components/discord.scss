@@ -1,0 +1,8 @@
+.discord {
+  @include d-flex-space-between;
+  gap: 0.938rem;
+  img {
+    height: 50%;
+    width: 50%;
+  }
+}
