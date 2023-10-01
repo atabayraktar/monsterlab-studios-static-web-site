@@ -11,9 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
       <div className="page-wrapper">
         <div className="steam">
-          <img src="/images/steam-temp.webp" />
+          <img src="/images/steam-temp.png" />
         </div>
         <div className="discord">
           <img src="/images/discord.webp" />
@@ -70,13 +71,13 @@ export default function Home() {
           />
           <TeamCard
             img="/images/team/Buse.svg"
-            name="Buse Ergün"
+            name="Buse Ergun"
             title="Environment Artist"
           />
           <TeamCard
             img="/images/team/Cem.svg"
-            name="Cem Arslaner"
-            title="Consept Artist"
+            name="Cem Aslaner"
+            title="Concept Artist"
           />
           <TeamCard
             img="/images/team/Sinan.svg"
