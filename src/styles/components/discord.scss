@@ -1,5 +1,6 @@
 .discord {
   @include d-flex-space-between;
+  cursor: pointer;
   gap: 0.938rem;
   img {
     height: 50%;

@@ -1,0 +1,27 @@
+.footer {
+  margin-bottom: 0.625rem;
+  .logo {
+    @include d-flex-center-all;
+    margin-bottom: 1.25rem;
+    img {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+  .social-media {
+    @include d-flex-center-all;
+    margin-bottom: 0.938;
+    gap: 3.125rem;
+    img {
+      height: 3.125rem;
+      width: 3.125rem;
+    }
+  }
+  .rights {
+    @include d-flex-center-all;
+    color: aliceblue;
+  }
+}
+.game-info {
+  color: aliceblue;
+}

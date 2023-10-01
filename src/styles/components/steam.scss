@@ -1,5 +1,6 @@
 .steam {
   @include d-flex-center-all;
+  cursor: pointer;
   img {
     height: 100%;
     width: 100%;

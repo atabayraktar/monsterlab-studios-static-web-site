@@ -1,0 +1,8 @@
+.press-kit {
+  @include d-flex-center-all;
+  cursor: pointer;
+  img {
+    height: 40%;
+    width: 40%;
+  }
+}

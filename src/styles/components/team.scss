@@ -1,0 +1,31 @@
+.team-wrapper {
+  @include d-flex-center-all;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 32rem 6.25rem 32rem;
+  @include mobile {
+    padding: 0;
+  }
+  .team {
+    @include d-flex-center-all;
+    flex-wrap: wrap;
+    gap: 0.938rem;
+    .team-card {
+      max-width: 9.375rem;
+      img {
+        height: 9.375rem;
+        width: 9.375rem;
+      }
+      .name {
+        font-size: 0.938rem;
+        font-weight: 600;
+        word-break: normal;
+        text-align: center;
+        color: rgb(0, 120, 64);
+        &.title {
+          color: rgb(247, 148, 29);
+        }
+      }
+    }
+  }
+}
