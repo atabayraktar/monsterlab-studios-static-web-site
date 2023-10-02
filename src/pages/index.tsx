@@ -47,7 +47,7 @@ export default function Home() {
           <TeamCard
             img="/images/team/Ekin.svg"
             name="Ekin Nohutçu"
-            title="Lead Game Developer"
+            title="Game Developer"
           />
           <TeamCard
             img="/images/team/Mustafa.svg"
