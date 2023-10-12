@@ -1,29 +1,37 @@
+"use client";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TeamCard from "../components/TeamCard";
 import { useLocomotiveScroll } from "../hooks/useLocomotiveScroll";
+import { useEffect } from "react";
 
 export default function Home() {
-  useLocomotiveScroll();
+  //useLocomotiveScroll();
+  useEffect(() => {
+    async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    };
+  }, []);
   return (
     <>
       <Head>
         <title>Monster Lab | Boo Busters</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div data-scroll-container>
+      <div>
         <Header />
         <div className="page-wrapper">
-          <div className="steam" data-scroll-section>
-            <img src="/images/steam-temp.png" data-scroll />
+          <div className="steam">
+            <img src="/images/steam-temp.png" />
           </div>
-          <div className="discord" data-scroll-section>
-            <img src="/images/discord.webp" data-scroll />
-            <img src="/images/more-info.webp" data-scroll />
+          <div className="discord">
+            <img src="/images/discord.webp" />
+            <img src="/images/more-info.webp" />
           </div>
-          <div className="game-info" data-scroll-section>
-            <div className="text" data-scroll>
+          <div className="game-info">
+            <div className="text">
               Boo Busters is a multiplayer simulation - action game. Are you
               ready for a chilling quest? Join a team of Ghost Hunters and
               embark on a journey that will test your courage in a world filled
@@ -36,21 +44,20 @@ export default function Home() {
               track supernatural entities.
             </div>
           </div>
-          <div data-scroll-section>
+          <div>
             <iframe
-              data-scroll
               width="630"
               height="350"
               src="https://www.youtube.com/embed/e9ASqhs9770?autoplay=1&mute=1&enablejsapi=1"
               allowFullScreen
             />
           </div>
-          <div className="press-kit" data-scroll-section>
-            <img src="/images/Press-kit.webp" data-scroll />
+          <div className="press-kit">
+            <img src="/images/Press-kit.webp" />
           </div>
         </div>
-        <div className="team-wrapper" data-scroll-section>
-          <div className="team" data-scroll>
+        <div className="team-wrapper">
+          <div className="team">
             <TeamCard
               img="/images/team/Ekin.svg"
               name="Ekin Nohutçu"
