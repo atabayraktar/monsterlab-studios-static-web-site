@@ -1,9 +1,4 @@
-interface TeamCardProps {
-  img: string;
-  name: string;
-  title: string;
-}
-export default function Header({ img, name, title }: TeamCardProps) {
+export default function Header({ img, name, title }) {
   return (
     <div className="team-card">
       <img src={img} />
