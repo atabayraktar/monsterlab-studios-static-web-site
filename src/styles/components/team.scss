@@ -3,13 +3,12 @@
   @include d-flex-center-all;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0 32rem 6.25rem 32rem;
+  padding: 0 32rem 0.625rem 32rem;
   @include mobile {
     padding: 0;
   }
   .team {
     @include d-flex-center-all;
-    flex-wrap: wrap;
     gap: 0.938rem;
     .team-card {
       max-width: 9.375rem;

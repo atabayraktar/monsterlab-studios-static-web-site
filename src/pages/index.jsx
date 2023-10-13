@@ -3,17 +3,10 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TeamCard from "../components/TeamCard";
-import { useLocomotiveScroll } from "../hooks/useLocomotiveScroll";
 import { useEffect } from "react";
-
+import { useLocomotiveScroll } from "../hooks/useLocomotiveScroll";
 export default function Home() {
   //useLocomotiveScroll();
-  useEffect(() => {
-    async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
-    };
-  }, []);
   return (
     <>
       <Head>
@@ -83,6 +76,10 @@ export default function Home() {
               name="İsmail Ak"
               title="Game Developer"
             />
+          </div>
+        </div>
+        <div className="team-wrapper">
+          <div className="team">
             <TeamCard
               img="/images/team/Buse.svg"
               name="Buse Ergun"

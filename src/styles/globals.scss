@@ -10,9 +10,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
   font-family: "IBM Plex Mono400", monospace;
   font-weight: 400;
+  background-color: black;
   background-image: url("/images/main-background.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -24,11 +24,13 @@ body {
   flex-direction: column;
   gap: 3.125rem;
   margin: 0 auto;
-  padding: 6.25rem 37rem;
+  padding: 6.25rem 0;
+  max-width: 40rem;
   @include mobile {
     padding: 0;
   }
 }
+
 iframe {
   box-sizing: border-box;
   border-width: 0.625rem 0.188rem 0.625rem 0.625rem;
