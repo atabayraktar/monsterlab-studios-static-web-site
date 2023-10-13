@@ -1,15 +1,20 @@
 .team-wrapper {
-  z-index: 100;
   @include d-flex-center-all;
   flex-direction: column;
   margin: 0 auto;
   padding: 0 32rem 0.625rem 32rem;
   @include mobile {
-    padding: 0;
+    padding: 0 1.875rem 0.625rem 1.875rem !important;
   }
   .team {
     @include d-flex-center-all;
     gap: 0.938rem;
+    width: 810px;
+    @include mobile {
+      justify-content: flex-start !important;
+      width: 400px;
+      overflow-y: scroll;
+    }
     .team-card {
       max-width: 9.375rem;
       min-height: 13rem;
@@ -26,6 +31,15 @@
         &.title {
           color: rgb(247, 148, 29);
           font-weight: 400 !important;
+        }
+      }
+      @include mobile {
+        img {
+          height: 7.5rem;
+          width: 7.5rem;
+        }
+        .name {
+          font-size: 0.75rem;
         }
       }
     }

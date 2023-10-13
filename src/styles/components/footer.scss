@@ -7,6 +7,12 @@
       height: 5rem;
       width: 5rem;
     }
+    @include mobile {
+      img {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
   }
   .social-media {
     @include d-flex-center-all;
@@ -16,9 +22,16 @@
       height: 3.125rem;
       width: 3.125rem;
     }
+    @include mobile {
+      img {
+        height: 2.125rem;
+        width: 2.125rem;
+      }
+    }
   }
   .rights {
     @include d-flex-center-all;
+    text-align: center;
     color: aliceblue;
   }
 }

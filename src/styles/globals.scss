@@ -17,6 +17,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+  @include mobile {
+    background-image: none;
+  }
 }
 
 .page-wrapper {
@@ -27,15 +30,21 @@ body {
   padding: 6.25rem 0;
   max-width: 40rem;
   @include mobile {
-    padding: 0;
+    padding: 3.25rem 1.5rem;
   }
 }
 
 iframe {
+  width: 39.375rem;
+  height: 21.875rem;
   box-sizing: border-box;
   border-width: 0.625rem 0.188rem 0.625rem 0.625rem;
   border-style: solid;
   border-color: transparent;
   border-image-source: url("/images/video-border.webp");
   border-image-slice: 10;
+  @include mobile {
+    width: 22.5em;
+    height: 12.5rem;
+  }
 }
