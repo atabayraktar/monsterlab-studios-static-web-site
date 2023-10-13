@@ -4,15 +4,15 @@
   margin: 0 auto;
   padding: 0 32rem 0.625rem 32rem;
   @include mobile {
-    padding: 0 1.875rem 0.625rem 1.875rem !important;
+    padding: 0 1.875rem 0.5rem 1.875rem !important;
   }
   .team {
     @include d-flex-center-all;
     gap: 0.938rem;
-    width: 810px;
+    width: 50.625rem;
     @include mobile {
       justify-content: flex-start !important;
-      width: 400px;
+      width: 22.5rem;
       overflow-y: scroll;
     }
     .team-card {
@@ -34,12 +34,16 @@
         }
       }
       @include mobile {
+        min-height: 12rem;
         img {
           height: 7.5rem;
           width: 7.5rem;
         }
         .name {
-          font-size: 0.75rem;
+          font-size: 0.9rem;
+          &.title {
+            font-size: 0.8rem;
+          }
         }
       }
     }
