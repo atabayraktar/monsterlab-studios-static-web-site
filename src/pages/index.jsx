@@ -37,12 +37,12 @@ export default function Home() {
               track supernatural entities.
             </div>
           </div>
-          <div>
+          {/*  <div>
             <iframe
               src="https://www.youtube.com/embed/e9ASqhs9770?autoplay=1&mute=1&enablejsapi=1"
               allowFullScreen
             />
-          </div>
+          </div> */}
           <div className="press-kit">
             <img src="/images/press-kit.webp" />
           </div>
