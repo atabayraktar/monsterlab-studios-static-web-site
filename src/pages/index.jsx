@@ -44,7 +44,7 @@ export default function Home() {
             />
           </div>
           <div className="press-kit">
-            <img src="/images/Press-kit.webp" />
+            <img src="/images/press-kit.webp" />
           </div>
         </div>
         <div className="team-wrapper">
