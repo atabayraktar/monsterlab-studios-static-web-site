@@ -2,6 +2,9 @@
   @include d-flex-space-between;
   cursor: pointer;
   gap: 0.938rem;
+  a {
+    display: contents;
+  }
   img {
     height: 50%;
     width: 50%;

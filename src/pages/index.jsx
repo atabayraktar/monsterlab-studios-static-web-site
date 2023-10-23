@@ -20,7 +20,9 @@ export default function Home() {
             <img src="/images/steam-temp.png" />
           </div>
           <div className="discord">
-            <img src="/images/discord.webp" />
+            <a href="https://discord.gg/pw8nV8545a" target="_blank">
+              <img src="/images/discord.webp" />
+            </a>
             <img src="/images/more-info.webp" />
           </div>
           <div className="game-info">
@@ -43,9 +45,14 @@ export default function Home() {
               allowFullScreen
             />
           </div> */}
-          <div className="press-kit">
-            <img src="/images/press-kit.webp" />
-          </div>
+          <a
+            href="https://drive.google.com/drive/folders/1Wvl0VIOo6NQeZctSlpOxl-f37RrpDhMP?usp=sharing"
+            target="_blank"
+          >
+            <div className="press-kit">
+              <img src="/images/press-kit.webp" />
+            </div>
+          </a>
         </div>
         <div className="team-wrapper">
           <div className="team">
